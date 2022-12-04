@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Percabangan If Else If JavaScript">
+    <meta name="keywords" content="HTML, JavaScript">
+    <meta name="author" content="Muhamad Helmi Adhfandi">
+    <title>Belajar Percabangan If Else If JavaScript</title>
+</head>
+<body>
+    <script>
+        var number = prompt("Maukkan nilai anda (1 sampai 100) :");
+        var grade
+
+        if(number > 100){
+            document.write("Maaf, nilai maksimum hanya sampai 100");
+        }
+        else if(number >= 90){
+            grade = "A";
+        }
+        else if(number >= 80){
+            grade = "B+";
+        }
+        else if(number >= 70){
+            grade = "B";
+        }
+        else if(number >= 60){
+            grade = "C+";
+        }
+        else if(number >= 50){
+            grade = "C";
+        }
+        else if(number >= 40){
+            grade = "D";
+        }
+        else if(number >= 30){
+            grade = "E";
+        }
+        else if(number < 0){
+            document.write("Maaf, nilai minimum hanya sampai 0");
+        }
+        else{
+            grade = "F";
+        }
+
+        document.write(`<p>Grade anda : ${grade} </p>`);
+    </script>
+</body>
+</html>
